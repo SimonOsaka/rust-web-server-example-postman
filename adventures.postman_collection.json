@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "090f5a80-03f7-4d34-a232-8da95203e1f1",
+		"name": "adventures",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/playlist/64c6b3aabfb56fe1",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"playlist",
+						"64c6b3aabfb56fe1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/tabs",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"tabs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures?item_id=5&limit=10&offset=0&province_key=hebei",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures"
+					],
+					"query": [
+						{
+							"key": "item_id",
+							"value": "5",
+							"description": "分类id"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "province_key",
+							"value": "hebei"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my_list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/my",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"my"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_journey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"潮白河公园x\",\n    \"image_url\": \"https://p3-search.byteimg.com/obj/labis/006399952391363ec5ae47c0c37977b5\",\n    \"link\": \"https://www.ixigua.com/7024859191864984072\",\n    \"source\": 3,\n    \"journey_destiny\": \"hebei\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "favorite",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/945/favorite",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"945",
+						"favorite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unfavorite",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/945/unfavorite",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"945",
+						"unfavorite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/944",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"944"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sync",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/sync/796",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"sync",
+						"796"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/959",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"959"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "version check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/adventures/update?appid=__UNI__410C039&version=1.3.0",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"adventures",
+						"update"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "__UNI__410C039"
+						},
+						{
+							"key": "version",
+							"value": "1.3.0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
