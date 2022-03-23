@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "e32287b1-b030-4d95-8c3a-6371bba88077",
+		"name": "users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"Xman\",\n    \"password\":\"1234567890abcde1234567890abcdeTT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/users/login",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"Gorros\",\n    \"password\":\"1234567890abcde1234567890abcdeTT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/users/registry",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"users",
+						"registry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change_password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"old_password\":\"1234567890abcde1234567890abcdeTT\",\n    \"new_password\":\"1234567890abcde1234567890abcdeBB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/users/password",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"users",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change_username",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"new_username\":\"Kate778\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/users/username",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"users",
+						"username"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adventures.jicu.vip/api/users/me",
+					"protocol": "https",
+					"host": [
+						"adventures",
+						"jicu",
+						"vip"
+					],
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
