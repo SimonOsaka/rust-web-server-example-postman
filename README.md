@@ -1,2 +1,6 @@
 # rust-web-server-example-postman
-export rust-web-server-example api
+It's the `api` of [rust-web-server-example](https://github.com/SimonOsaka/rust-web-server-example) for development .
+
+# Use
+- open postman
+- import `*.json` file into your workspace
