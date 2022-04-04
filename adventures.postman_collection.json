@@ -93,14 +93,18 @@
 		{
 			"name": "my_list",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Token {{token}}",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"url": {
 					"raw": "https://adventures.jicu.vip/api/adventures/my",
 					"protocol": "https",
@@ -121,17 +125,21 @@
 		{
 			"name": "create_journey",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Token {{token}}",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\": \"潮白河公园x\",\n    \"image_url\": \"https://p3-search.byteimg.com/obj/labis/006399952391363ec5ae47c0c37977b5\",\n    \"link\": \"https://www.ixigua.com/7024859191864984072\",\n    \"source\": 3,\n    \"journey_destiny\": \"hebei\"\n}",
+					"raw": "{\n    \"title\": \"潮白河公园xxxx\",\n    \"image_url\": \"https://p3-search.byteimg.com/obj/labis/006399952391363ec5ae47c0c37977b5\",\n    \"link\": \"https://www.ixigua.com/7024859191864984072\",\n    \"source\": 3,\n    \"journey_destiny\": \"hebei\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -157,16 +165,20 @@
 		{
 			"name": "favorite",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Token {{token}}",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"url": {
-					"raw": "https://adventures.jicu.vip/api/adventures/945/favorite",
+					"raw": "https://adventures.jicu.vip/api/adventures/950/favorite",
 					"protocol": "https",
 					"host": [
 						"adventures",
@@ -176,7 +188,7 @@
 					"path": [
 						"api",
 						"adventures",
-						"945",
+						"950",
 						"favorite"
 					]
 				}
@@ -186,16 +198,20 @@
 		{
 			"name": "unfavorite",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Token {{token}}",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"url": {
-					"raw": "https://adventures.jicu.vip/api/adventures/945/unfavorite",
+					"raw": "https://adventures.jicu.vip/api/adventures/950/unfavorite",
 					"protocol": "https",
 					"host": [
 						"adventures",
@@ -205,7 +221,7 @@
 					"path": [
 						"api",
 						"adventures",
-						"945",
+						"950",
 						"unfavorite"
 					]
 				}
@@ -232,7 +248,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://adventures.jicu.vip/api/adventures/944",
+					"raw": "https://adventures.jicu.vip/api/adventures/951",
 					"protocol": "https",
 					"host": [
 						"adventures",
@@ -242,7 +258,7 @@
 					"path": [
 						"api",
 						"adventures",
-						"944"
+						"951"
 					]
 				}
 			},
@@ -251,14 +267,18 @@
 		{
 			"name": "sync",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Token {{token}}",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"url": {
 					"raw": "https://adventures.jicu.vip/api/sync/796",
 					"protocol": "https",
@@ -279,16 +299,20 @@
 		{
 			"name": "delete",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Token {{token}}",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"url": {
-					"raw": "https://adventures.jicu.vip/api/adventures/959",
+					"raw": "https://adventures.jicu.vip/api/adventures/949",
 					"protocol": "https",
 					"host": [
 						"adventures",
@@ -298,7 +322,7 @@
 					"path": [
 						"api",
 						"adventures",
-						"959"
+						"949"
 					]
 				}
 			},
